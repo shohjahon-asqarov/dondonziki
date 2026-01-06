@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.box {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 40px rgb(154, 138, 138);
+}
+
+.arena {
+  display: flex;
+  gap: 150px;
+}
+
+.arena .left {
+  transform: rotate(90deg);
+}
+
+.arena .right {
+  transform: rotateY(180deg) rotate(90deg);
+}
+
+.arena img {
+  width: 120px;
+}
+
+.tools {
+  display: flex;
+  gap: 50px;
+}
+
+.tools div {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tools div:hover {
+  transform: scale(1.1);
+}
+
+.tools h3 {
+  margin-top: 10px;
+}
+
+.tools img {
+  width: 60px;
+}
